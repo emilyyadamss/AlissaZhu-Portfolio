@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Xiaotong (Alissa) Zhu — Fashion design portfolio. Technical drawing, illustration, CLO 3D, and conceptual collections exploring space, the body, and history." />
+  <title>Xiaotong (Alissa) Zhu — Fashion Design Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Progress bar -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav__brand">Alissa&nbsp;Zhu</a>
+    <nav class="nav__links" aria-label="Primary">
+      <a href="#technical">Technical</a>
+      <a href="#invisible">Invisible Space</a>
+      <a href="#witches">Night Witches</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="top">
+    <div class="hero__media" id="heroMedia">
+      <img src="assets/pages/page-01.jpg" alt="Sheer draped fabric, blue and ivory" />
+      <div class="hero__scrim"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow reveal">Fashion Design Portfolio</p>
+      <h1 class="hero__title">
+        <span class="reveal" style="--d:.05s">Xiaotong</span>
+        <span class="hero__alias reveal" style="--d:.15s">(Alissa)</span>
+        <span class="reveal" style="--d:.25s">Zhu</span>
+      </h1>
+      <p class="hero__sub reveal" style="--d:.4s">Technical Drawing &amp; Individual Projects</p>
+    </div>
+    <a href="#intro" class="hero__cue" aria-label="Scroll down">
+      <span>Scroll</span>
+      <span class="hero__cue-line"></span>
+    </a>
+  </section>
+
+  <!-- Intro / statement -->
+  <section class="intro" id="intro">
+    <div class="intro__inner">
+      <p class="intro__label reveal">Designer Statement</p>
+      <p class="intro__lead reveal">
+        I design garments that begin as research and end as movement. Translating the
+        textures of cities, histories, and overlooked spaces into draped, constructed,
+        and reassembled form.
+      </p>
+      <p class="intro__body reveal">
+        My work moves fluidly between hand illustration, flat technical drawing, CLO&nbsp;3D
+        simulation, draping, and textile experiments. Each project below traces a complete
+        process. From concept and field research to development, fitting, and final shoot.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ TECHNICAL DRAWING ============ -->
+  <section class="project" id="technical">
+    <div class="project__head">
+      <div class="project__head-inner">
+        <p class="project__index reveal">01 — Studio Practice</p>
+        <h2 class="project__title reveal">Technical Drawing<br />&amp; Illustration</h2>
+        <p class="project__intro reveal">
+          A study in fluidity and silhouette. Fluid float panels, draped sashes, and
+          sculptural sleeves are explored across hand illustration, front-and-back flats,
+          and CLO&nbsp;3D garment simulation: A self-authored narrative built around flow.
+        </p>
+        <ul class="project__tags reveal">
+          <li>Illustration</li><li>Technical Flats</li><li>CLO 3D</li><li>Draping</li>
+        </ul>
+      </div>
+    </div>
+    <div class="gallery" data-gallery="technical"></div>
+  </section>
+
+  <!-- ============ INVISIBLE SPACE ============ -->
+  <section class="project project--alt" id="invisible">
+    <div class="project__head">
+      <div class="project__head-inner">
+        <p class="project__index reveal">02 — Conceptual Collection</p>
+        <h2 class="project__title reveal">Invisible Space</h2>
+        <p class="project__intro reveal">
+          Behind Hong Kong's bustling prosperity lie hidden, invisible narrow spaces. Driven
+          by curiosity about the city's housing, my research revealed a stark disparity between
+          rich and poor. Subdivided apartments where residents live in crowded, confined rooms.
+          I simulated those compressed conditions through body experiments, iron-mesh sculpture,
+          woven textiles, and negative-cutting draping.
+        </p>
+        <ul class="project__tags reveal">
+          <li>Field Research</li><li>Collage</li><li>Body Experiment</li><li>Woven Textile</li><li>Draping</li>
+        </ul>
+      </div>
+    </div>
+    <div class="gallery" data-gallery="invisible"></div>
+  </section>
+
+  <!-- ============ NIGHT WITCHES ============ -->
+  <section class="project" id="witches">
+    <div class="project__head">
+      <div class="project__head-inner">
+        <p class="project__index reveal">03 — Conceptual Collection</p>
+        <h2 class="project__title reveal">Night Witches</h2>
+        <p class="project__intro reveal">
+          Inspired by the witch hunts driven by a fear of strong women, the all-female
+          night bomber regiment of WWII the German army called the "Night Witches." These
+          aviators had no uniforms of their own, wearing ill-fitting menswear into battle.
+          The collection investigates the gap between men's uniforms and women's bodies through
+          pattern study, rust-dyeing, aging techniques, and reassembled silhouettes.
+        </p>
+        <ul class="project__tags reveal">
+          <li>Historical Research</li><li>Pattern Study</li><li>Rust Dye</li><li>Tailoring</li><li>Reassembly</li>
+        </ul>
+      </div>
+    </div>
+    <div class="gallery" data-gallery="witches"></div>
+  </section>
+
+  <!-- Contact -->
+  <footer class="contact" id="contact">
+    <div class="contact__inner">
+      <p class="contact__label reveal">Let's work together</p>
+      <h2 class="contact__title reveal">Xiaotong (Alissa) Zhu</h2>
+      <p class="contact__sub reveal">Fashion Designer; Technical Drawing &amp; Conceptual Collections</p>
+      <a class="contact__cta reveal" href="assets/source-portfolio.pdf" target="_blank" rel="noopener">View full PDF portfolio →</a>
+      <p class="contact__credit reveal">© <span id="year"></span> Alissa Zhu. All garments, illustrations &amp; photography by the designer.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image viewer">
+    <button class="lightbox__close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Previous">&#8249;</button>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Next">&#8250;</button>
+    <figure class="lightbox__fig">
+      <img id="lbImg" src="" alt="" />
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -8,6 +8,21 @@
 
   /* ---- Gallery content ---- */
   const GALLERIES = {
+    unlaces: [
+      { n: 30, title: "She Unlaces", sub: "Reborn femininity · Couture", span: "full" },
+      { n: 31, title: "Moodboard", sub: "Victorian spirit photography" },
+      { n: 32, title: "Visual Research", sub: "Colorboard & undergarments" },
+      { n: 33, title: "Textile Development", sub: "Smocking · Fringe · Digital print" },
+      { n: 34, title: "Design Process", sub: "Collage · Draping · Subtraction cutting" },
+      { n: 35, title: "Design Process", sub: "Silhouette sketches" },
+      { n: 36, title: "Collection Lineup", sub: "Unlacing — ten looks", span: "full" },
+      { n: 37, title: "Look 1", sub: "Illustration · Flats · Fitting" },
+      { n: 38, title: "Look 2", sub: "Illustration · Flats · Draping" },
+      { n: 39, title: "Look 3", sub: "Illustration · Flats · Corset & veil" },
+      { n: 40, title: "Look 4", sub: "Illustration · Flats · Fitting" },
+      { n: 41, title: "Look 5", sub: "Illustration · Flats · Bodysuit" },
+      { n: 42, title: "Look 6", sub: "Illustration · Flats · Fitting" },
+    ],
     technical: [
       { n: 2, title: "Floats", sub: "Illustration · Flats · CLO 3D", span: "full" },
       { n: 3, title: "Hooded Draping", sub: "Illustration · Flats" },
@@ -90,7 +105,7 @@
   /* ---- Nav scroll state + progress + active section ---- */
   const nav = document.getElementById("nav");
   const progress = document.getElementById("scrollProgress");
-  const sections = ["technical", "invisible", "witches", "contact"]
+  const sections = ["unlaces", "technical", "invisible", "witches", "contact"]
     .map((id) => document.getElementById(id)).filter(Boolean);
   const links = Array.from(document.querySelectorAll(".nav__links a"));
 

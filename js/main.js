@@ -24,13 +24,13 @@
       { n: 42, title: "Look 6", sub: "Illustration · Flats · Fitting" },
     ],
     technical: [
-      { n: 3, title: "Floats", sub: "Illustration · Flats" },
-      { n: 2, title: "Flats", sub: "Illustration · Flats · CLO 3D", span: "full" },
-      { n: 4, title: "Flats", sub: "Illustration · Flats" },
-      { n: 6, title: "Flats", sub: "Illustration · Flats" },
-      { n: 7, title: "Flats", sub: "Illustration · Flats" },
-      { n: 8, title: "Flow", sub: "Self-authored narrative", span: "full" },
-      { n: 5, title: "Flats", sub: "Illustration · Flats · Inspiration" },
+      { n: 3, sub: "Illustration · Floats" },
+      { n: 2, sub: "Illustration · Flats · CLO 3D", span: "full" },
+      { n: 4, sub: "Illustration · Flats" },
+      { n: 6, sub: "Illustration · Flats" },
+      { n: 7, sub: "Illustration · Flats" },
+      { n: 8, sub: "Self-authored narrative", span: "full" },
+      { n: 5, sub: "Illustration · Flats · Inspiration" },
     ],
     invisible: [
       { n: 9,  title: "Invisible Space", sub: "Concept & Collage", span: "full" },
@@ -74,14 +74,14 @@
       fig.className = "gallery__item" + (item.span === "full" ? " gallery__item--full" : "");
       fig.setAttribute("tabindex", "0");
       fig.setAttribute("role", "button");
-      fig.setAttribute("aria-label", `${item.title} — open larger view`);
+      fig.setAttribute("aria-label", `${item.title ? item.title + " — " : ""}open larger view`);
       fig.dataset.index = idx;
 
       fig.innerHTML = `
-        <img src="${PAGE(item.n)}" alt="${item.title} — ${item.sub}" loading="lazy" decoding="async" />
+        <img src="${PAGE(item.n)}" alt="${item.title ? item.title + " — " : ""}${item.sub}" loading="lazy" decoding="async" />
         <span class="gallery__zoom" aria-hidden="true">⤢</span>
         <figcaption class="gallery__meta">
-          <span class="gallery__meta-title">${item.title}</span><br />
+          ${item.title ? `<span class="gallery__meta-title">${item.title}</span><br />` : ""}
           <span class="gallery__meta-sub">${item.sub}</span>
         </figcaption>`;
 
@@ -158,8 +158,8 @@
   function render() {
     const item = FLAT[current];
     lbImg.src = PAGE(item.n);
-    lbImg.alt = `${item.title} — ${item.sub}`;
-    lbCap.textContent = `${item.title} · ${item.sub} — ${current + 1} / ${FLAT.length}`;
+    lbImg.alt = `${item.title ? item.title + " — " : ""}${item.sub}`;
+    lbCap.textContent = `${item.title ? item.title + " · " : ""}${item.sub} — ${current + 1} / ${FLAT.length}`;
   }
   function openLightbox(i) {
     current = i; render();
